@@ -1,0 +1,47 @@
+body {
+    overflow: hidden;
+    background-color: #444; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: absolute;
+    z-index: -1;
+  }
+  
+  
+  .image {
+      height: 220px;
+      width: 220px;
+      margin: 5px 3px;
+      background-size: cover;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: .5s;
+      position: relative;
+      z-index: 0;
+    }
+  
+  
+    
+    .image:hover {
+      filter: grayscale(0%);
+      transition: .5s;
+    }
+  
+    .col {
+      display: inline-block;
+    }
+  
+  
+    .focus {
+      position: absolute;
+      z-index: 1;
+      height: 672px;
+      width: 672px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      filter: grayscale(0%);
+    }
